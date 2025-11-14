@@ -39,7 +39,7 @@ User → Telegram Bot → FastAPI Server (/webhook) → LLM API → FastAPI Serv
 └── .env                         # Create this from .env.example
 ```
 
-## Setup Instructions
+## Setup Instructions (for my group members)
 
 ### 1. Prerequisites
 
@@ -344,20 +344,16 @@ uvicorn app.main:app --reload | tee bot.log
 
 ## Contributing
 
-This is a group project for CSC4330. To contribute:
+To contribute:
 
 1. Create a feature branch
 2. Make your changes
 3. Test thoroughly
-4. Create a pull request
+4. Create a pull request and send me a message in the discord
 
 ## License
 
-Educational project for LSU CSC4330 Software Systems Design
-
-## Support
-
-For issues and questions, please use the GitHub Issues page or contact the development team.
+None
 
 ---
 
@@ -365,4 +361,4 @@ For issues and questions, please use the GitHub Issues page or contact the devel
 - FastAPI
 - Python 3.8+
 - Telegram Bot API
-- OpenAI/Anthropic/xAI APIs
+- Compatibilty spanning OpenAI/Anthropic/xAI APIs

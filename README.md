@@ -1,6 +1,6 @@
 # Text-to-LLM Telegram Bot
 
-A production-ready FastAPI backend that connects Telegram users to LLM providers (OpenAI, Anthropic Claude, xAI Grok). Built for CSC4330 Software Systems Design.
+A production-ready FastAPI backend that connects Telegram users to LLM providers.
 
 ## Group Members:
 - **Samuel Vekovius (vekoLSU)**

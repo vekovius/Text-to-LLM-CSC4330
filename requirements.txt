@@ -1,0 +1,16 @@
+# Web Framework
+fastapi==0.115.5
+uvicorn[standard]==0.32.1
+
+# HTTP Client for API requests
+httpx==0.27.2
+
+# Data validation
+pydantic==2.10.3
+
+# Environment variable management
+python-dotenv==1.0.1
+
+# Optional: If you want to use specific LLM SDKs (currently using direct HTTP calls)
+# openai==1.55.3
+# anthropic==0.39.0

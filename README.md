@@ -2,6 +2,13 @@
 
 A production-ready FastAPI backend that connects Telegram users to LLM providers (OpenAI, Anthropic Claude, xAI Grok). Built for CSC4330 Software Systems Design.
 
+## Group Members:
+Samuel Vekovius
+-add ur name and commit
+-add ur name and commit
+-add ur name and commit
+-add ur name and commit
+
 ## Architecture
 
 ```

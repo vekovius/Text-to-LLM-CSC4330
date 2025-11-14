@@ -7,7 +7,7 @@ A production-ready FastAPI backend that connects Telegram users to LLM providers
 - **Caleb Wycoff (crusewycoff1)**
 - **Tobias Hill (RealTobiasHill)**
 - **Jaroslav Aupart (YSLja)**
-- **add ur name/gihub profile and commit**
+- **add ur name/gihub profile and make pull req**
 
 ## Architecture
 

@@ -43,7 +43,7 @@ User → Telegram Bot → FastAPI Server (/webhook) → LLM API → FastAPI Serv
 │
 ├── requirements.txt
 ├── README.md
-└── .env                         # Create this from .env.example
+└── .env                         # Create this from .env.example (in discord under env text channel)
 ```
 
 ## Setup Instructions (for my group members)

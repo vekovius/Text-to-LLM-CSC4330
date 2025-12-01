@@ -1,0 +1,30 @@
+mkdir -p .github/workflows
+cat > .github/workflows/ci-discord-bot.yml <<'EOF'
+name: CI - Discord Bot
+
+on:
+  push:
+    paths:
+      - 'discord/**'
+  pull_request:
+    paths:
+      - 'discord/**'
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r discord/requirements.txt
+      - name: Lint (flake8)
+        run: |
+          pip install flake8
+          flake8 discord --max-line-length=120 || true
+EOF

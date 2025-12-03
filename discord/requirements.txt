@@ -1,0 +1,7 @@
+cat > discord/requirements.txt <<'EOF'
+discord.py>=2.1.0
+httpx>=0.24.0
+python-dotenv>=1.0.0
+# optional: if you prefer to use the openai python package instead of raw HTTP
+# openai>=0.27.0
+EOF

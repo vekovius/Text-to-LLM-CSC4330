@@ -1,0 +1,15 @@
+cat > discord/docker-compose.yml <<'EOF'
+version: "3.8"
+services:
+  discord-bot:
+    build: .
+    env_file:
+      - .env
+    restart: unless-stopped
+    # optional: if your LLM server is in another service, connect here
+    # networks:
+    #   - localnet
+# networks:
+#   localnet:
+#     driver: bridge
+EOF

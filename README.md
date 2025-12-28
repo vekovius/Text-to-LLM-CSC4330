@@ -4,7 +4,7 @@ A FastAPI backend that connects Telegram users to LLM providers using a Telegram
 This README documents the exact setup our group used for running the project locally during development.
 
 ## Group Members:
-- **Samuel Vekovius (vekoLSU)**
+- **Samuel Vekovius (vekoLSU/vekovius)**
 - **Caleb Wycoff (crusewycoff1)**
 - **Tobias Hill (RealTobiasHill)**
 - **Jaroslav Aupart (YSLja)**
@@ -334,3 +334,4 @@ To contribute:
 ## License
 
 None
+

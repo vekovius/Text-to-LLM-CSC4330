@@ -83,7 +83,7 @@ DEBUG=False
 #### Supported Models
 
 **OpenAI:**
-- `gpt-4o-mini` (recommended for cost efficiency)
+- `gpt-4o-mini`
 - `gpt-4o`
 - `gpt-4-turbo`
 - `gpt-3.5-turbo`

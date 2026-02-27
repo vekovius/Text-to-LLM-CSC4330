@@ -168,8 +168,6 @@ curl -X POST "https://api.telegram.org/bot<YOUR_BOT_TOKEN>/setWebhook" \
 ```
 
 ### Verify Webhook Status
-
-Check if webhook is set correctly:
 ```
 https://api.telegram.org/bot<YOUR_BOT_TOKEN>/getWebhookInfo
 ```

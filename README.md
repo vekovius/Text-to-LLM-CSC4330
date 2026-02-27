@@ -139,7 +139,7 @@ uvicorn app.main:app --host 0.0.0.0 --port 8000
 
 Your server must be publicly accessible via HTTPS. Once deployed:
 
-### Method 1: Browser (Quick)
+### Method 1: Browser
 
 Navigate to:
 ```

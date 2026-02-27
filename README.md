@@ -278,11 +278,3 @@ View logs in real-time:
 ```bash
 uvicorn app.main:app --reload | tee bot.log
 ```
-
----
-
-**Built with:**
-- FastAPI
-- Python 3.8+
-- Telegram Bot API
-- OpenAI/Anthropic/xAI APIs

@@ -39,7 +39,7 @@ User → Telegram Bot → FastAPI Server (/webhook) → LLM API → FastAPI Serv
 └── .env                         # Create this from .env.example
 ```
 
-## Setup Instructions
+## Setup
 
 ### 1. Prerequisites
 
@@ -218,36 +218,6 @@ curl -X POST "http://localhost:8000/webhook" \
 2. Send it a message
 3. Check server logs to see the request processing
 
-## Deployment
-
-### Recommended Platforms
-
-- **Railway**: https://railway.app
-- **Render**: https://render.com
-- **Heroku**: https://heroku.com
-- **DigitalOcean App Platform**: https://www.digitalocean.com/products/app-platform
-- **AWS EC2/Lambda**
-- **Google Cloud Run**
-
-### Deployment Checklist
-
-- [ ] Set environment variables on hosting platform
-- [ ] Ensure server is accessible via HTTPS
-- [ ] Set Telegram webhook to your deployment URL
-- [ ] Test with a message on Telegram
-- [ ] Monitor logs for errors
-
-### Environment Variables for Deployment
-
-Make sure to set these on your hosting platform:
-```
-TELEGRAM_BOT_TOKEN=<your_token>
-LLM_PROVIDER=openai
-LLM_API_KEY=<your_key>
-LLM_MODEL=gpt-4o-mini
-PORT=8000
-```
-
 ## Switching LLM Providers
 
 To switch between providers, simply update your `.env` file:
@@ -310,54 +280,6 @@ View logs in real-time:
 ```bash
 uvicorn app.main:app --reload | tee bot.log
 ```
-
-## Troubleshooting
-
-### Bot not responding
-
-1. **Check webhook status:**
-   ```
-   https://api.telegram.org/bot<TOKEN>/getWebhookInfo
-   ```
-
-2. **Verify environment variables:**
-   ```bash
-   python -c "from app.config import config; config.validate()"
-   ```
-
-3. **Check server logs** for error messages
-
-4. **Test webhook endpoint** with curl
-
-### LLM API Errors
-
-- Verify your API key is valid
-- Check API usage limits/quotas
-- Ensure correct model name for provider
-- Review server logs for detailed error messages
-
-### Server won't start
-
-- Ensure all dependencies are installed: `pip install -r requirements.txt`
-- Verify `.env` file exists and has correct values
-- Check port 8000 is not already in use
-
-## Contributing
-
-This is a group project for CSC4330. To contribute:
-
-1. Create a feature branch
-2. Make your changes
-3. Test thoroughly
-4. Create a pull request
-
-## License
-
-Educational project for LSU CSC4330 Software Systems Design
-
-## Support
-
-For issues and questions, please use the GitHub Issues page or contact the development team.
 
 ---
 
